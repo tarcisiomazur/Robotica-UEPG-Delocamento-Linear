@@ -105,7 +105,7 @@ void setup()
     wifiStatus = WiFi.status();
 
     if ((wifiStatus == WL_CONNECTED) || (wifiStatus == WL_NO_SSID_AVAIL) ||
-    (wifiStatus == WL_CONNECT_FAILED) || (millis() >= connectTimeout)) 
+    (wifiStatus == WL_CONNECT_FAILED) || (millis() >= connectTimeout))
       break;
 
     delay(100);
